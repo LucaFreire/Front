@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #EAEDED;
+    margin-bottom: 5px;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+#blocos{
+    display: flex;
+}
+
+.card-deck{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transition: 0.3s;
+}
+
+.card-deck:hover{
+    transform: scale(1.1);
+}
+
+.card-footer{
+    height: 18vh;
+}
+h3{
+    text-align: center;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    border: none;
+}
+footer{
+    padding-left: 15px;
+    position: absolute;
+    bottom: 0;
+    background-color: #333;
+    width: 100%;
+    color: white;
+}
