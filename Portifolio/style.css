@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#header-texto{
+
+    
+}
+
+
+
+#header-texto:hover
+{
+    transform: scale(1.1);
+
+}
+
+
+#img{
+    background: url(image/bg.jpg) no-repeat
+    center center;
+    background-size: cover;
+    height: 100vh;
+}
+#img img{
+    height: 100vh;
+}
+
+h1{
+    padding-top: 100px;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    width: 115px;
+    font-size:6rem;
+}
+
+h1:hover{
+
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+main{
+    width: 75vw;
+    margin: 0 auto;
+
+}
+
+
