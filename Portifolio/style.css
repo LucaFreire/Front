@@ -3,48 +3,116 @@
     margin: 0;
 }
 
-#header-texto{
 
+h6{
+    /* My Contacts */
+    padding-top: 10px; 
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+header{
+    width: 100%;
+    height: 10%;
+    padding-bottom: 200px;
+}
+
+
+.caixa{
+    /* Imagens */
+    gap: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
     
 }
 
 
+.caixa img{
+    /* Imagens */
+    width: 50px;
+    transition: 0.3s;
+}
 
-#header-texto:hover
-{
+
+.caixa img:hover{
     transform: scale(1.1);
-
+    transition: 0.5s;
+    box-shadow: 3px 3px 15px 3px rgb(139, 139, 139);  
+    border-radius: 5px;
+    background: #ffffff10;
+    backdrop-filter: blur(10px);  
 }
 
 
 #img{
+    /* Fundo */
     background: url(image/bg.jpg) no-repeat
     center center;
     background-size: cover;
-    height: 100vh;
+    height: 100vh;   
 }
-#img img{
-    height: 100vh;
-}
+
 
 h1{
-    padding-top: 100px;
+    /* Nome */
     color: white;
     font-family: 'Red Hat Display', sans-serif;
-    width: 115px;
+    width: 22%;
     font-size:6rem;
-}
-
-h1:hover{
-
-    transform: scale(1.1);
     transition: 0.3s;
 }
 
-main{
-    width: 75vw;
-    margin: 0 auto;
+
+h1:hover{
+    transform: scale(1.1);
+    backdrop-filter: blur(15px);  
+    border-radius: 20px;
 
 }
 
 
+main{
+    width: 80%;
+    height: 73%;
+    margin: 0 auto;
+}
+.card{
+    position: absolute;
+    left: 40%;
+    width: 50%;
+    height: 70%;
+
+    border-radius: 10px;
+    background: #ffffff10;
+
+    color: aliceblue;
+    backdrop-filter: blur(1px);  
+    transition: 0.5s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 15px 1px rgb(139, 139, 139);
+    backdrop-filter: blur(5px);  
+}
+
+
+.icon{
+    padding-top: 50px;
+    transition: 1;
+    color: azure
+}
+
+.icon:hover{
+    transform: scale(1.01);
+    text-decoration: none;
+}
+
+.icon a{
+    color: aliceblue;
+    text-decoration: none;
+}
