@@ -7,7 +7,7 @@
 h6{
     /* My Contacts */
     padding-top: 10px; 
-    color: aliceblue;
+    color: rgb(38, 38, 38);
     display: flex;
     justify-content: center;
 
@@ -42,7 +42,7 @@ header{
     transform: scale(1.1);
     transition: 0.5s;
     box-shadow: 3px 3px 15px 3px rgb(139, 139, 139);  
-    border-radius: 5px;
+    border-radius: 60px;
     background: #ffffff10;
     backdrop-filter: blur(10px);  
 }
@@ -50,7 +50,7 @@ header{
 
 #img{
     /* Fundo */
-    background: url(image/bg.jpg) no-repeat
+    background: url(image/pexels-simon-berger-1323550.jpg) no-repeat
     center center;
     background-size: cover;
     height: 100vh;   
@@ -63,15 +63,14 @@ h1{
     font-family: 'Red Hat Display', sans-serif;
     width: 22%;
     font-size:6rem;
-    transition: 0.3s;
+    transition: 0.9s;
 }
 
 
 h1:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     backdrop-filter: blur(15px);  
     border-radius: 20px;
-
 }
 
 
@@ -80,24 +79,39 @@ main{
     height: 73%;
     margin: 0 auto;
 }
+
+
 .card{
+    padding-top: 1px;
     position: absolute;
     left: 40%;
     width: 50%;
     height: 70%;
 
     border-radius: 10px;
-    background: #ffffff10;
+    background: #12121210;
 
     color: aliceblue;
-    backdrop-filter: blur(1px);  
+    backdrop-filter: blur(3px);  
     transition: 0.5s;
 }
 
+
 .card:hover{
     transform: scale(1.1);
-    box-shadow: 1px 1px 15px 1px rgb(139, 139, 139);
+    box-shadow: 1px 1px 15px 1px rgb(15, 15, 15);
     backdrop-filter: blur(5px);  
+    background: #00000050;
+
+}
+
+.card h4:hover{
+    transition: 0.2s;
+}
+
+
+.card h4:hover{
+    transform: scale(1.05);
 }
 
 
@@ -105,14 +119,29 @@ main{
     padding-top: 50px;
     transition: 1;
     color: azure
+    
 }
+
 
 .icon:hover{
     transform: scale(1.01);
     text-decoration: none;
 }
 
+
 .icon a{
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    font-size:x-large
+    
+}
+
+h5{
+    font-family: 'Caramel', cursive;
+    padding-left: 10px;
+    color: white;
+}
+
+h4{
+    padding-top: 5px;
 }
