@@ -50,8 +50,8 @@ header{
 
 #img{
     /* Fundo */
-    background: rgb(82,78,144);
-    background: linear-gradient(180deg, rgba(82,78,144,1) 0%, rgba(0,212,255,1) 100%);
+    background: rgb(116,66,147);
+    background: linear-gradient(180deg, rgba(116,66,147,1) 0%, rgba(31,90,195,1) 100%);
     background-size: cover;
     height: 100vh;   
 }
