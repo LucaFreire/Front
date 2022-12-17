@@ -7,7 +7,7 @@
 h6{
     /* My Contacts */
     padding-top: 10px; 
-    color: rgb(38, 38, 38);
+    color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
 
@@ -50,8 +50,8 @@ header{
 
 #img{
     /* Fundo */
-    background: url(image/pexels-simon-berger-1323550.jpg) no-repeat
-    center center;
+    background: rgb(82,78,144);
+    background: linear-gradient(180deg, rgba(82,78,144,1) 0%, rgba(0,212,255,1) 100%);
     background-size: cover;
     height: 100vh;   
 }
@@ -133,7 +133,6 @@ main{
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size:x-large
-    
 }
 
 h5{
