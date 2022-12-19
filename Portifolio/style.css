@@ -13,6 +13,10 @@ h6{
 
 }
 
+.card h4 {
+    padding-left: 25px;
+}
+
 
 header{
     width: 100%;
@@ -141,6 +145,37 @@ h5{
     color: white;
 }
 
-h4{
+.card h4{
     padding-top: 5px;
 }
+
+
+.card2{
+    margin-top: 5rem;
+    width: 30%;
+    padding: 0 5px;
+}
+
+.card2 h4{
+
+
+}
+
+.card2:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 15px 1px rgb(15, 15, 15);
+    backdrop-filter: blur(5px);  
+    background: #00000050;
+
+}
+
+.card2{
+    padding: 5px;
+    border-radius: 10px;
+    background: #12121210;
+
+    color: aliceblue;
+    backdrop-filter: blur(3px);  
+    transition: 0.5s;
+}
+
