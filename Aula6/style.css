@@ -1,0 +1,22 @@
+.botao{
+    border-radius: 10px;
+    color: white;
+}
+
+#vermelho{
+    background-color: red;
+}
+
+#azul{
+    background-color: blue;
+}
+
+#verde{
+    background-color: green;
+}
+
+#alerta{
+    background-color: rgb(75, 77, 77);
+    color: white;
+    border-radius: 10px;
+}

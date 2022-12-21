@@ -149,6 +149,10 @@ h5{
     padding-top: 5px;
 }
 
+.card h2:hover{
+    transform: scale(1.01);
+}
+
 
 .card2{
     margin-top: 5rem;
@@ -156,9 +160,8 @@ h5{
     padding: 0 5px;
 }
 
-.card2 h4{
-
-
+.card2 h4:hover{
+    transform: scale(1.01);
 }
 
 .card2:hover{
@@ -173,9 +176,14 @@ h5{
     padding: 5px;
     border-radius: 10px;
     background: #12121210;
-
     color: aliceblue;
     backdrop-filter: blur(3px);  
     transition: 0.5s;
 }
 
+li{
+    transition: 0.2;
+}
+li:hover{
+    transform: scale(1.01);
+}
