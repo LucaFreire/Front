@@ -217,21 +217,36 @@ function Exercicio1()
         {return soma += valor}, -200);
     console.log("\nParte4", Parte4);
 }
-Exercicio1();
+// Exercicio1();
 
 
 // ---------------------------- Exercício 2 ----------------------------
 function Exercicio2()
 {   
-    var nums = [1,2,3,4,5,6,7,8,9,10];
+    const nums = [1,2,3,4,5,6,7,8,9,10];
 
     var par = nums.filter(function(valor){return valor % 2 == 0}); 
     var impar = nums.filter(function(valor){return valor % 2 != 0}); 
 
-    
+    // Tire o primeiro item da array dos pares e coloque no final da array dos impares
+    var num = par.shift()
+    impar.push(num);
+    console.log(impar)
+    var newArray = []
 
+    impar.forEach((valor,index) =>
+    { 
+        if (valor % index == 0)
+            newArray.push(valor);
+    });
 
+    par.forEach((valor,index)=>
+    {
+        if (valor % index == 0)
+            newArray.push(valor);
+    });
+
+    console.log(newArray);
 }
-
-
+Exercicio2();
 
