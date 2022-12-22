@@ -1,5 +1,5 @@
 
 function MudaCor(cor)
 {
-  $('#alerta').css("backgroundColor",cor);
+  $('#alert').css("backgroundColor",cor);
 }
