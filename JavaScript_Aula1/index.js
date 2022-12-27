@@ -198,6 +198,7 @@ function Exercicio1()
     // Tire os 3 primeiros números e adicione uma array com 5 números no lugar
     var nums = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11, 15, 22, 27];
     nums = nums.slice(3)
+    
     var Parte1 = [0,1,2,3,4, ...nums];
     console.log("Parte1", Parte1);
     
@@ -248,5 +249,4 @@ function Exercicio2()
 
     console.log(newArray);
 }
-Exercicio2();
-
+// Exercicio2();
