@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style></style>
+    <title>children and find</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                Line 1
+            </li>
+
+            <li>
+                Line 2
+            </li>
+
+            <li>
+                Line 3
+            </li>
+        </ul>
+    </div>
+
+    <script>
+
+        $("div").children().css({'border': '1px solid red'}) // mostra todas os filhos da div
+            
+        $("div").find('li').css({'border': '1px solid red'}) // mostra todas os filhos até o find(<nome>)
+
+        // $("hmtl").find('*').css({'border': '1px solid red'}) // mostra tudo do html
+
+    </script>
+
+</body>
+</html>

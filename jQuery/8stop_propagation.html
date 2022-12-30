@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>stop propagation</title>
+</head>
+<body>
+
+    <style>
+        div{border:1px solid red; padding: 10px}
+        p{border:1px solid rgb(98, 0, 255); padding: 10px}
+        span{border:1px solid rgb(0, 255, 106); padding: 10px}
+
+    </style>
+
+    <div>
+        Tag div here
+        <p>
+            Tag p here<br/><br/><br/>
+            <span>Tag span here</span>
+        </p>
+    </div>
+    
+    <script>
+        $("div").click(() => {alert("Evento disparado na div")})
+        $("p").click(() => {event.stopPropagation();alert("Evento disparado no p")})
+        $("span").click(() => {event.stopPropagation();alert("Evento disparado no span")})
+            // caso não houvesse o stopPropagation, o alert seria executado em efeito dominó
+    </script>
+
+
+</body>
+</html>

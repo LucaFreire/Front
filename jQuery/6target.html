@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>target</title>
+
+</head>
+<body>
+    <p id="texto1">Texto</p>
+    <div id="texto2">Alguma coisa</div>
+    <p id="texto3">Objeto clicado</p>
+    <p id="texto4">ID:</p>
+
+    <script>
+        $(document).click(function(event){
+            $("#texto3").text("Objeto clicado: " + event.target.tagName)
+            $("#texto4").text("ID: " + event.target.id)
+        })
+    </script>
+</body>
+</html>

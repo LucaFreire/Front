@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>values</title>
+</head>
+<body>
+
+    <h2 id="caixa">Após inserir algo, clique aqui</h2>
+    <input type="text" id="nome"/>
+
+    <script>
+
+        $("#caixa").click(function(){
+            alert("Texto: " + $("#nome").val())}) // Pega o valor do input
+
+        $("#caixa").click(function(){
+            alert("Texto: " + $("#nome").text())}) // Pega o texto do input
+        
+        $("#caixa").click(function(){
+            alert("Texto: " + $("#nome").html())}) // Pega o html do input
+
+        /* 
+        $("#nome").click(function(){
+            alert("Texto: " + $(this).val())})
+                // se for referenciar o proprio elemento, utilize o this (C#)
+        */ 
+
+    </script>
+    
+</body>
+</html>
