@@ -88,13 +88,9 @@ function Exemplo3() // Alguns atalhos p/ fazer coisas
 
 function ValidarCpf(cpfUser)
 {
-
     let count = 10;
     let sum = 0;
-    
-
-    var cpf = cpfUser.replace(/[.,-]/g, '')
-    console.log(cpf);
+    var cpf = cpfUser.replace(/[.,-]/g, '');
 
     if (cpf.length != 11)
         return false;
@@ -106,10 +102,8 @@ function ValidarCpf(cpfUser)
     }
 
     resto = 11 - (sum % 11);
-    
     if(resto > 9)
         resto = 0;
-
     if(resto != parseInt(cpf[9]))
     {
         console.log("CPF Inválido!");
@@ -118,35 +112,27 @@ function ValidarCpf(cpfUser)
 
     sum = 0;
     count = 11;
-    for (let i = 0; i < 10; i++)
+    for(let i = 0; i < 10; i++)
     {   
         sum += parseInt(cpf[i]) * count;
         count--;
     }
         
-    resto = 11 - (sum % 11)
-
+    resto = 11 - (sum % 11);
     if(resto > 9)
-        resto = 0
+        resto = 0;
     
     if (resto == parseInt(cpf[10]))
         return true;
-
 }
-// console.log(ValidarCpf("15401718926"))
 
 
-    $("button").click(function () {
-        var cpff = $("#cpfUser").val();
+$("button").click(function(){
+    var cpf = $("#cpfUser").val();
 
-        if (ValidarCpf(cpff))   
-            $("h5").text("Válido")
-        
-        else
-            $("h5").text("Inválido")
-
-    })
-
-
-
-
+    if(ValidarCpf(cpf))   
+        $("h5").text("Válido");
+    
+    else
+        $("h5").text("Inválido");
+});
