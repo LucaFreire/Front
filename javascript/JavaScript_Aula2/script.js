@@ -1,5 +1,4 @@
 
-
 $(document).ready(function () {
     $("button").click(function () {
         var display = $(".display").val()
