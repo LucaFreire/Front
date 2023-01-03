@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style></style>
+    <title>parent</title>
+</head>
+<body>
+    <div>
+        <ul>    
+            <li>
+                <h3>I'm h3 and I'm in li </h3>
+                <span>I'm span</span>
+                <p>I'm p</p>
+                <p>I'm p2</p>
+
+            </li>
+        </ul>
+    </div>
+
+    <script>
+
+        $("h3").siblings().css({'border': '1px solid red'}) // mostra todo os irmão do h3
+            // irmãos == todos que estão na mesma 'chave' que elemento referenciado (h3)
+
+        
+        $("h3").siblings('p').css({'border': '1px solid red'}) // mostra todo os irmão de elemto p do h3
+
+
+        $("h3").next().css({'border': '1px solid red'}) // mostra o irmão direto do elemento h3 (abaixo dele, irmão mais novo)
+            // nextAll() = mostra todos os irmão mais novos
+            // nextUntil() = mostra todos os imrão novos até o nextUntil(<nome>)
+
+
+        $("h3").prev().css({'border': '1px solid red'}) // mostra o irmão direto do elemento h3 (acima dele, irmão mais velho)
+            // prevAll() = mostra todos os irmão mais velhos
+            // prevUntil() = mostra todos os imrão velhos até o nextUntil(<nome>)
+
+    </script>
+
+</body>
+</html>

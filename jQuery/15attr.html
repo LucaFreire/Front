@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>trocar atributos</title>
+</head>
+<body>
+
+    <style>
+        .bloco{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+
+        .blue{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(0, 76, 255);
+        }
+
+        .green{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(33, 218, 101);
+        }
+    </style>
+
+    <div id = "caixa" class ="bloco">
+        <p>Bloco</p>
+    </div>
+
+    <button id = "btn_blue">Blue</button>
+    <button id = "btn_green">Green</button>
+
+    <script>
+
+        $("#btn_blue").click(function(){
+            $("#caixa" ).attr('class','green')})
+        
+        $("#btn_green").click(function(){
+            $("#caixa").attr('class','blue')})
+
+    </script>
+
+</body>
+</html>

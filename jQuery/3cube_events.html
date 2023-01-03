@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Eventos</title>
+</head>
+<body>
+
+    <style>
+        #bloco
+        {
+            width: 500px;
+            height: 500px;
+            background-color: black;
+        }
+
+    </style>
+    <div id="bloco"></div>
+    <p id="texto"></p>
+
+    <label>Digite algo: </label>
+    <input type="text" id="nome">
+    <p id="text_input"></p>
+
+    <script>
+        // mouse's events
+        /*
+        $("#bloco").click(()=>{
+            $("#texto").text("bloco clicado")
+        })
+
+        $("#bloco").mouseenter(()=>{
+            $("#texto").text("você está com o mouse em cima")
+        })
+
+        $("#bloco").mouseleave(()=>{
+            $("#texto").text("você saiu de cima")
+        })
+
+        $("#bloco").mousemove(()=>{
+            $("#texto").text("você está mevendo o mouse em cima")
+        })
+        */
+
+        // AO INVÉS DE FAZER ISSO, PODEMOS FAZER ISSO:
+
+        $("#bloco").on({
+            click:() => {$("#texto").text("Clique co quadrado")},
+            mouseenter:() => {$("#texto").text("você está com o mouse em cima")},
+            mouseleave:() => {$("#texto").text("você saiu de cima")},
+            mousemove:() => {$("#texto").text("você está mevendo o mouse em cima")},
+            dblclick:() => {$("#texto").text("click duplo")}
+        })
+
+        /* 
+            O MÉTODO on PODE SER UTILIZADO TAMBÉM P/ CHAMAR FUNÇÃO COM DIFERENTES MÉTODOS
+            EXEMPLO:
+
+                $("#bloco").on("click dblclick", () => {
+                    $("#texto").text("Teste")
+                    alert("teste")
+                })
+            
+                NESSE CASO, NÃO IMPORTA SE VOCÊ DAR dblclick OU click, VAI CHAMAR A MESMA FUNÇÃO
+        */
+       
+        // keyboard's events
+        $("#nome").keyup(()=>{
+            $("#text_input").text($("#nome").val())
+        })
+
+
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <label>valor 1</label>
+    <input type="text" id ="v1" value="0"/>
+    <label>valor 2</label>
+    <input type="text" id ="v2" value="0"/>
+    <label>Resultado</label>
+    <input type="text" id ="res" value="0"/>
+    <br/><br/>
+    <button id ="btn__js">Somar Js</button>
+    <button id ="btn_jq">Somar Jq</button>
+
+    <script>// normal js
+
+        let btnJS = document.getElementById("btn_jq")
+        .addEventListener("click",function()
+        {
+            let v1 = document.getElementById("v1").value
+            let v2 = document.getElementById("v2").value
+            document.getElementById("res").value = parseInt(v1)+parseInt(v2)
+        });
+
+    // ----------------------------Jquery--------------------------------
+        
+        $("#btnjq").click(() => 
+        {
+            let v1 = parseInt($("#v1").val())
+            let v2 = parseInt($("#v2").val())
+            $("#res").val(v1 + v2)
+        })
+    </script>
+
+</body>
+</html>

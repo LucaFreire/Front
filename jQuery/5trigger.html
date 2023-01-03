@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Trigger</title>
+</head>
+<body>
+
+    <style>
+
+        .blocos{
+            display: flex;
+            justify-content: space-around;
+
+        }
+        
+        #bloco
+        {
+            width: 500px;
+            height: 500px;
+            background-color: black;
+        }
+
+        #bloco2
+        {
+            width: 500px;
+            height: 500px;
+            background-color: rgb(253, 0, 0);
+        }
+
+    </style>
+
+    <div class="blocos">
+        <div id="bloco"></div>
+        <div id="bloco2"></div>
+    </div>
+
+    <p id="texto"></p>
+
+
+    <script>
+
+        $("#bloco").on({
+            click:() => {$("#texto").text("Clique no quadrado")},
+            mouseenter:() => {$("#texto").text("você está com o mouse em cima")},
+            mouseleave:() => {$("#texto").text("você saiu de cima")},
+            mousemove:() => {$("#texto").text("você está mevendo o mouse em cima")},
+            dblclick:() => {$("#texto").text("click duplo")}
+        })
+
+        $("#bloco2").click(()=>
+            $("#bloco").trigger('click')) // quando clicarmos no bloco2, irá acionar a função click do bloco1
+
+    </script>
+    
+</body>
+</html>
