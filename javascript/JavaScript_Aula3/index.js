@@ -104,11 +104,9 @@ function ValidarCpf(cpfUser)
     resto = 11 - (sum % 11);
     if(resto > 9)
         resto = 0;
+
     if(resto != parseInt(cpf[9]))
-    {
-        console.log("CPF Inválido!");
         return false;
-    }
 
     sum = 0;
     count = 11;
@@ -126,13 +124,11 @@ function ValidarCpf(cpfUser)
         return true;
 }
 
-
 $("button").click(function(){
     var cpf = $("#cpfUser").val();
 
     if(ValidarCpf(cpf))   
-        $("h5").text("Válido");
-    
+        $("h5").text("CPF Válido");
     else
-        $("h5").text("Inválido");
+        $("h5").text("CPF Inválido");
 });

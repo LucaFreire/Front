@@ -1,0 +1,23 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+header
+{   
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;   
+}
+
+#Clicks
+{
+
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+
+}
+
