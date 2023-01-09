@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header
+{
+    height:8vh;
+    width: 100vw;
+    color:hsl(0, 15%, 13%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Links
+{
+    display: flex;
+    gap:5px;
+}
+
+h3
+{
+    display: flex;
+    justify-content: center;
+}
+
+.card
+{
+    box-shadow: 0 4px 8px 0 rgba(92, 89, 89, 0.2);
+    transition: 0.3s;
+    gap: 10px;
+    text-align: center;
+    width: calc(32% - 10px);
+    border-radius: 10px;
+}
+
+.card:hover
+{
+    transform: scale(1.03);
+    box-shadow: 1 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.Select
+{
+    padding-top: 10px;
+    display: flex;
+    margin-left: 90%;
+}
+
+.Organizar_Cards
+{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Editar
+{
+    padding: 10px;
+}
+
+.controle
+{
+    display: flex;
+    gap:.3em;
+}
+
+#Controle
+{
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(90,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

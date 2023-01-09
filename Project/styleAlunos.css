@@ -1,0 +1,72 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header
+{
+    height:8vh;
+    width: 100vw;
+    color:hsl(0, 15%, 13%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.Links
+{
+    display: flex;
+    gap:5px;
+}
+
+.controle
+{
+    display: flex;
+    gap:.3em;
+}
+
+#Controle
+{
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(90,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Input_Card
+{
+    padding-top: 90px;
+    justify-content: center;
+    width: 100vw;
+    gap: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+}
+
+.Org
+{
+    display: block;
+    margin: auto;
+    width: 250px ;
+}
+
+.Org button
+{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(132, 208, 132);
+    border-radius: 50px;
+}
+
+.Inputs
+{
+
+    height: 50px;
+    margin-bottom: 10px;
+    width: 250px;
+
+}
+
