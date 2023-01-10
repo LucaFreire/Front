@@ -5,29 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Salas</title>
+    <link rel="stylesheet" href="styleInserts.css">
 </head>
 <body>
 
     <header>
-        <div class="controle"> <!-- Texto Controle de estudantes -->
-            <h4 id="Controle">CONTROLE</h4>
-            <h4>de Estudantes</h4>
-        </div>
+        <a href="Index.html"> <img src="Images/Home.png" title="Home" alt="HM"></a> 
+
 
         <div class="Links"> <!-- Links Alunos | Sala -->
             <p>Cadastro:</p>
             <a href="Alunos.html" name="Botao_Alunos" value="Alunos" style="color: inherit; text-decoration: none;">Alunos</a>
             <p>|</p>
-            <a href="Salas.html" name="Botao_Sala" value="Sala" style="color: inherit; text-decoration: none;">Sala</a> 
+            <a href="Salas.html" name="Botao_Sala" value="Sala" style="color: inherit; text-decoration: none;">Turma</a> 
         </div>
     </header>
 
     <div class="Input_Card">
+        <h3>Cadastrar Turma</h3>
         <div class="Org">
-            <input type="text" id="Disciplina_Turma" class="Inputs" placeholder="Disciplina">
-            <input type="text" id="Idade_Aluno" class="Inputs" placeholder="Idade do Aluno">
-            <input type="text" id="Sala_Aluno" class="Inputs" placeholder="Sala do Aluno">
-            <button id="Sala_Aluno" class="Inputs" style="margin-bottom: 10px;">Cadastrar</button>
+            <div class="img-field">
+                <img src="Images/sala.png" id="imgFoto" style="width: 40%;">
+            </div>
+            <input type="text" id="Disciplina_Turma" class="Inputs" placeholder="Nome">
+            <input type="text" id="Idade_Aluno" class="Inputs" placeholder="Capacidade">
+            <button id="Sala_Aluno" class="Inputs" style="margin-bottom: 10px;">Cadastrar Turma</button>
         </div>
     </div>
     

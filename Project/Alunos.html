@@ -5,35 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Alunos</title>
-    <link rel="stylesheet" href="styleAlunos.css">
+    <link rel="stylesheet" href="styleInserts.css">
+    
 </head>
 <body>
 
     <header>
-        <a href="Alunos.html"> <img src="Images/Home.png" title="Home" alt="HM"></a> 
-            <h4 id="Controle">CONTROLE</h4>
-            <h4>de Estudantes</h4>
+        
+        <a href="Index.html"> <img src="Images/Home.png" title="Home" alt="HM"></a> 
             
-        </div>
-
         <div class="Links"> <!-- Links Alunos | Sala -->
             <p>Cadastro:</p>
             <a href="Alunos.html" name="Botao_Alunos" value="Alunos" style="color: inherit; text-decoration: none;">Alunos</a>
             <p>|</p>
-            <a href="#" name="Botao_Sala" value="Sala" style="color: inherit; text-decoration: none;">Sala</a> 
+            <a href="Salas.html" name="Botao_Sala" value="Sala" style="color: inherit; text-decoration: none;">Turma</a> 
         </div>
+
     </header>
 
     <div class="Input_Card">
+        <h3>Cadastrar Aluno</h3>
         <div class="Org">
-            <input type="text" id="Nome_Aluno" class="Inputs" placeholder="Nome do Aluno">
+            <div class="img-field">
+                <img src="Images/PerfilIcon.jpg" id="imgFoto" style="width: 40%">
+            </div>
+            <input type="file" id="flImage" name="foto" accept="image/*" style="display: none;">
+
+            <input type="text" id="Nome_Aluno" class="Inputs" placeholder="Nome do Aluno" >
             <input type="text" id="Idade_Aluno" class="Inputs" placeholder="Idade do Aluno">
-            <input type="text" id="Sala_Aluno" class="Inputs" placeholder="Sala do Aluno">
-            <button id="Sala_Aluno" class="Inputs" style="margin-bottom: 10px;">Cadastrar Aluno</button>
+
+            <div class="Select">
+
+                <label>Sala de Aula:</label>
+                    <select name="Selecione_Sala" class="Inputs">
+                        <option value="1">TI</option>
+                        <option value="2">Mecatrônica</option>
+                    </select>
+            </div>
+
+            <button id="Cadastrar_Aluno" class="Inputs" style="margin-bottom: 10px;">Cadastrar Aluno</button>
         </div>
     </div>
 
 
-
+    <script src="script.js"></script>
 </body>
 </html>
