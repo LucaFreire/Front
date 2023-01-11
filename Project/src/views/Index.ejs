@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="controle"> <!-- Texto Controle de estudantes -->
+            <h4 id="Controle">CONTROLE</h4>
+            <h4>de Estudantes</h4>
+        </div>
+
+        <div class="Links"> <!-- Links Alunos | Sala -->
+            <p>Cadastro:</p>
+            <a href="alunos" name="Botao_Alunos" value="Alunos" style="color: inherit; text-decoration: none;">Alunos</a>
+            <p>|</p>
+            <a href="Salas" name="Botao_Sala" value="Sala" style="color: inherit; text-decoration: none;">Turma</a> 
+        </div>
+    </header>
+
+        <div class="Select">
+                <label>Sala de Aula:&nbsp;</label>
+            <select name="Selecione_Sala">
+                <option value="1">TI</option>
+                <option value="2">Mecatrônica</option>
+            </select>
+        </div>
+
+        <h3>Alunos</h3>
+        
+        <div class="Organizar_Cards">
+
+            <div class="card" id="1">
+                <img src="Images/PerfilIcon.jpg" alt="John" style="width:40%;" style="text-decoration: none">
+                <h1>Donathan</h1>
+                <p>Idade: 19</p>
+                <div class="Editar">
+                    <button><a href="EditarAluno" name="Editar_Card" value="Editar_Card" style="color: inherit; text-decoration: none;">Editar</a></button>
+                </div>
+            </div>
+
+        </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+</body>
+</html>

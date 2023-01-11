@@ -127,3 +127,13 @@ h3
 {
     transform: scale(1.1);
 }
+
+#Editar_Aluno
+{
+    transition: 0.3s;
+}
+
+#Editar_Aluno:hover
+{
+    transform: scale(1.1);
+}

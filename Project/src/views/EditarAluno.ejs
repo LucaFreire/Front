@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Aluno</title>
+    <link rel="stylesheet" href="css/styleInserts.css">
+</head>
+<body>
+
+    <header>
+        <a href="/"> <img src="Images/Home.png" title="Home" alt="HM"></a> 
+        <div class="Links"> <!-- Links Alunos | Sala -->
+            <p>Cadastro:</p>
+            <a href="Alunos" name="Botao_Alunos" value="Alunos" style="color: inherit; text-decoration: none;">Alunos</a>
+            <p>|</p>
+            <a href="Salas" name="Botao_Sala" value="Sala" style="color: inherit; text-decoration: none;">Turma</a> 
+        </div>
+    </header>
+
+    <div class="Input_Card">
+        <h3>Editar Cadastro</h3>
+        <div class="Org">
+            <div class="img-field">
+                <img src="Images/PerfilIcon.jpg" id="imgFoto" style="width: 40%;">
+            </div>
+            <input type="text" id="Nome_Aluno" class="Inputs" placeholder="Nome">
+            <input type="text" id="Idade_Aluno" class="Inputs" placeholder="Idade">
+            <input type="text" id="Idade_Aluno" class="Inputs" placeholder="Sexo">
+            
+            <div class="Select">
+
+                <label>Sala de Aula:</label>
+                    <select name="Selecione_Sala" class="Inputs">
+                        <option value="1">TI</option>
+                        <option value="2">Mecatrônica</option>
+                    </select>
+            </div>
+
+            <button id="Editar_Aluno" class="Inputs" style="margin-bottom: 10px;">Editar Aluno</button>
+        </div>
+    </div>
+    
+</body>
+</html>
